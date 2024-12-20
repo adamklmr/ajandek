@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Question Page</title>
+    <title>Panni karácsonya</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -11,7 +11,7 @@
     <form id="questionForm">
         <label for="question" id = "question">Hány nap telt el az első találkozásunk óta?</label><br><br>
         <input type="text" id="answer" name="answer" required><br><br>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Küldés">
     </form>
 
     <script>
@@ -19,11 +19,12 @@
             event.preventDefault();
             const answer = document.getElementById('answer').value.trim().toLowerCase();
             if (answer === '190') {
-                window.location.href = 'ajandek.html';
+                window.location.href = './ajandek';
             } else {
-                window.location.href = 'nemjo.html';
+                window.location.href = './nemjo';
             }
         });
     </script>
+    <img src="gif3.gif" id="gif3">
 </body>
 </html>

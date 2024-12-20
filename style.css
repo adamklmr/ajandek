@@ -44,31 +44,89 @@ input[type="submit"] {
     transition: background-color 0.3s ease, transform 0.2s ease;
     display: inline-block;
 }
+#vege{
+    display: block;
+    font-size: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 0px;
+
+}
 h1{
     text-align: center;
     font-size: 40px;
     margin-top: 20px;
 }
-p{
-    font-size: 25px;
-    text-align: center;
+#segitseg1{
     background-color: lightblue;
-    padding: 40px;
-    border-radius: 10px;
-
+    padding: 20px;
+}
+p{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
 }
 #vissza{
-    margin-left: 40%;
+    display: block;
     background-color: lightblue;
+    text-align: center;
+    margin: 50px 80px 50px 80px;
+    padding: 20px;
     
 }
-.gift-image {
-    max-width: 100%; /* Ensure the image does not exceed the screen width */
-    height: auto;    /* Maintain aspect ratio */
-    width: 500px;    /* Set a specific width, adjust as needed */
-    border-radius: 10px; /* Optional: Add rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
-    margin-top: 20px; /* Add spacing above the image */
+#video{
+    display: block;
     margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
-
+#gif1{
+    width: 50%;  
+    float: left;
+}
+#gif2{
+    width: 40%;
+    float: right;
+}
+#gif3{
+    width: 100%;
+    float: middle;
+}
+#gif4{
+    width: 30%;
+    float: left;
+    margin-top: 10px;
+}
+#gif5{
+    width: 30%;
+    float: right;
+    margin-top: 10px;
+}
+#gif6{
+    width: 50%;
+    float: left;
+} 
+#gif7{
+    padding-top: 40px;
+    width: 40%;
+    float: right;
+}
+.gift-image {
+    max-width: 100%; 
+    height: auto;    
+    width: 500px;
+    display: block;
+}
+#aji{
+    display: block;
+    background-color: lightblue;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#segitseg{
+    display: block;
+    padding-bottom: 0px;
+    font-size: small;
+    font-weight: lighter;
+}
