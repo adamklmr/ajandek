@@ -15,10 +15,26 @@
     </form>
 
     <script>
+        function calculateDaysSinceJune15() {
+            const today = new Date();
+            const currentYear = today.getFullYear();
+            let june15 = new Date(currentYear, 5, 15);
+            if (today < june15) {
+                june15 = new Date(currentYear - 1, 5, 15);
+            }
+
+            const differenceInTime = today - june15;
+            return Math.floor(differenceInTime / (1000 * 60 * 60 * 24));
+        }
+    
         document.getElementById('questionForm').addEventListener('submit', function(event) {
             event.preventDefault();
-            const answer = document.getElementById('answer').value.trim().toLowerCase();
-            if (answer === '190') {
+        
+            const correctDays = calculateDaysSinceJune15();
+            
+            const userAnswer = parseInt(document.getElementById('answer').value.trim(), 10);
+
+            if (userAnswer === correctDays) {
                 window.location.href = './ajandek';
             } else {
                 window.location.href = './nemjo';
